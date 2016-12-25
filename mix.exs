@@ -35,7 +35,7 @@ defmodule Chemistry.Mixfile do
 
   defp package do
     [
-      files: ~w(lib mix.exs),
+      files: ~w(lib mix.exs README*),
       maintainers: ["Yianna Kokalas"],
       licenses: ["Apache 2.0"],
       links: %{"Github" => "https://github.com/genericlady/chemistry"}
