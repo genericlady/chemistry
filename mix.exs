@@ -35,6 +35,7 @@ defmodule Chemistry.Mixfile do
 
   defp package do
     [
+      files: ~w(lib),
       maintainers: ["Yianna Kokalas"],
       licenses: ["Apache 2.0"],
       links: %{"Github" => "https://github.com/genericlady/chemistry"}
