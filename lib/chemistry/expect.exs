@@ -1,4 +1,4 @@
-defmodule Chemistry.Expectation do
+defmodule Chemistry.Expect do
   defmacro expect({operator, _, [lhs, rhs]}) do
     quote bind_quoted: [operator: operator, lhs: lhs, rhs: rhs] do
       Chemistry.Test.expect(operator, lhs, rhs)
