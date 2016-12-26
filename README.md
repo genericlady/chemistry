@@ -39,6 +39,42 @@ FAILURE:
 iex(4)> 
 ```
 
+Place all labs inside of `./lab` and be sure to append `_lab.exs` to
+anything you want to be a lab.
+
+Write expressive tests using a call to `it` followed by a description
+for the lab.
+
+```elixir
+defmodule MathLab do
+  use Chemistry.Expect
+
+  it "Can use integers for addition and subtraction." do
+    expect 2 + 3 == 5
+    expect 5 - 5 == 10
+  end
+
+  it "Can use integers for multiplication and division" do
+    expect 5 * 5 == 25
+    expect 10 / 2 == 5
+  end
+end
+```
+
+Run `iex` from the terminal to see an example file message.
+
+```
+iex(1)> MathLab.run
+.===========================================
+FAILURE: Can use integers for addition and subtraction.
+===========================================
+FAILURE:
+  Expected: 0 to be equal to 10
+
+
+:ok
+```
+
 ## License
 Copyright 2016 Yianna Kokalas
 
