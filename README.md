@@ -10,7 +10,7 @@ A testing framework for Elixir.
 
     ```elixir
     def deps do
-      [{:chemistry, "~> 0.1.2"}]
+      [{:chemistry, "~> 0.1.4"}]
     end
     ```
 
@@ -27,8 +27,8 @@ A testing framework for Elixir.
 From Interactive Elixir, type `iex` from terminal.
 
 ```elixir
-iex(1)> import Chemistry.Expect 
-Chemistry.Expect
+iex(1)> import Chemistry.Lab 
+Chemistry.Lab
 iex(2)> expect 1 == 1
 .:ok
 iex(3)> expect 1 > 1
@@ -47,7 +47,7 @@ for the lab.
 
 ```elixir
 defmodule MathLab do
-  use Chemistry.Expect
+  use Chemistry.Lab
 
   it "Can use integers for addition and subtraction." do
     expect 2 + 3 == 5
