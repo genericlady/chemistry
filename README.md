@@ -8,19 +8,19 @@ A testing framework for Elixir.
 
   1. Add `chemistry` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:chemistry, "~> 0.1.4"}]
-    end
-    ```
+```elixir
+def deps do
+  [{:chemistry, "~> 0.1.4"}]
+end
+```
 
   2. Ensure `chemistry` is started before your application:
 
-    ```elixir
-    def application do
-      [applications: [:chemistry]]
-    end
-    ```
+```elixir
+def application do
+  [applications: [:chemistry]]
+end
+```
 
 ## Examples
 
